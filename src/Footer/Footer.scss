@@ -1,0 +1,61 @@
+.main-footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 50px;
+    /* Adjust the padding values as per your preference */
+
+    .Img-col {
+        flex-basis: 40%;
+        /* Adjust the width of the first column */
+
+        // Rest of the styles...
+    }
+
+    .overview-col,
+    .customer-service-col,
+    .connect-with-us-col {
+        flex-basis: 20%;
+
+        /* Adjust the width of the other three columns */
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+
+                    &:hover {
+                        color: #555;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}
+
+.social-media {
+    display: flex;
+
+    .social-icon {
+        width: 40px;
+        margin-right: 10px;
+    }
+}
+
+.connect-with-us-col,
+img {
+
+    align-items: center;
+}

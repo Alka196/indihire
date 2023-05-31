@@ -1,0 +1,89 @@
+.main-page-container {
+    margin-top: 150px;    
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    // padding-left:100px;
+    // padding-right: 100px;
+  
+   
+}
+
+.column-1 {
+    background-image: url(https://indihire.com/wp-content/uploads/2022/06/Home-banner-bg.png);
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    padding-left:100px;
+    padding-right: 100px;    
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+
+.column-1-r1 {
+   
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: left;
+   h1{
+    font-size: 60px;
+   }
+   p{
+    font-size: 30px;
+    text-align: left;
+    padding-left: 115px;
+
+   }
+    }
+
+.column-1-r2 {
+  //flex-basis: 60%;
+  flex-grow: 6;
+    // flex-grow: 6;
+
+    img {
+        width:800px;
+        height:700px;
+        padding-left: 50px;
+    }
+}
+
+.column-2{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    // width: 10000000vh;
+    background-color: rgb(104, 19, 19);
+    text-align: center;
+    align-items: center;
+    border: white  1px solid;
+    
+    .btn-col2{
+        background-color: #c98806;
+        border-radius: 20px;
+        width:200px;
+        height:50px;
+        border: none;
+        font-size: 20px;
+    }
+    .column-2-r1{
+        flex-basis: 50%;
+        color:white;
+        font-size: 100px;
+       
+       
+    }
+    .column-2-r2{
+        flex-basis: 50%;
+        color:white;
+        font-size: 100px;
+        
+    }
+}
