@@ -33,3 +33,25 @@ NavItem{
   margin-left: 10px;
   margin-right: 20px;
 }
+.nav-link-gap {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link-gap::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link-gap:hover::after,
+.nav-link-gap:focus::after {
+  transform: scaleX(1);
+  background-color: #000; // Change to the desired underline color
+}

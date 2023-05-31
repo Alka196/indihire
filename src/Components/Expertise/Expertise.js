@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Expertise.scss'
 
 function Expertise() {
     return ( 

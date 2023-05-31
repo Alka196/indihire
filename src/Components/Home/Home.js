@@ -6,6 +6,7 @@ import MainPage from './MainPage';
 
 
 
+
 function Home() {
     const location = useLocation();
     const isMainPage = location.pathname === "/";
@@ -13,8 +14,9 @@ function Home() {
         <>
             <Header />   
             {isMainPage && <MainPage />}      
-            <Footer />
+          
             <Outlet />
+            <Footer />
            
 
         </>

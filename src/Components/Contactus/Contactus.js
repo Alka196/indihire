@@ -1,4 +1,5 @@
 import React from 'react';
+import './Contactus.scss';
 
 
 function Contactus() {

@@ -1,4 +1,5 @@
 import React from 'react';
+import './WhatWeDo.scss';
 
 
 function WhatWeDo() {
@@ -6,13 +7,22 @@ function WhatWeDo() {
         <>
         
         <div className="main-Whatwedo">
-            <div>
+            <div className='text-area'>
                 <h1><strong>Agile. Focused.
                     
-                     </strong>Innovative.</h1>
-                     </div>
-                     <span class="subheader">We offer rapid technical recruiting services that enable IT, <br></br>
+                     </strong>
+                     <br></br><small>Innovative.</small></h1>
+                     
+                     <span >We offer rapid technical recruiting services that enable IT, <br></br>
                      tech, and digital companies find the right people, fast</span>
+            </div>
+            <div className='btn-divs'>
+                <li><button></button></li>
+                <li><button></button></li>
+                <li><button></button></li>
+                <li><button></button></li>
+                <li><button></button></li>
+            </div>
             </div>
             </>
      );

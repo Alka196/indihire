@@ -37,11 +37,14 @@ const gotoJobs =()=>{
                     <button className='btn-col2'onClick={()=>gotoJobs()}>Find Jobs </button>
                 </div>
                 </div>
-                <div className='column-3'><h1> columnumn</h1></div>
-                <div className='column-4'><h1> columnumn</h1></div>
-                <div className='column-5'><h1> columnumn</h1></div>
-                <div className='column-6'><h1> columnumn</h1></div>
-                <div className='column-7'><h1> columnumn</h1></div>
+                <div className='column-3'>
+                    <div></div>
+                        
+                    </div>
+                <div className='column-4'><h1> </h1></div>
+                <div className='column-5'><h1> </h1></div>
+                <div className='column-6'><h1> </h1></div>
+                <div className='column-7'><h1> </h1></div>
 
 
             </div>
