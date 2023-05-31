@@ -23,3 +23,64 @@
         font-size: 20px;
     }
 }
+.btn-divs{
+    padding: 20px;
+    border-color:solid 1px  grey;
+    ul{
+        display: flex;
+        flex-direction: row;
+        //justify-content: space-between;
+    }
+    li{
+        display: inline-block;
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+    button{
+        
+        width:250px;
+        height:60px;
+        background-color: white;
+        border-color: rgb(125, 118, 118);
+        color: rgb(113, 108, 108);
+        border-radius: 30px;
+        font-size: 20px;
+
+    }
+}
+.solutions-col{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-top: 0px;
+    .solution-img{
+        width:100%;
+        height:100%;
+    }
+    .solution-text{
+        text-align: center;
+        padding: 10px;
+      
+
+        .sections-part{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding:30px;
+            
+            .slides ul{
+                display: inline-block;
+                li{
+                    border: 1px solid grey;
+                    height:150px;
+                    width:150px;
+        
+                }
+            }
+        }
+    }
+    
+    }
+   
+        
+  

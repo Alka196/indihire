@@ -3,15 +3,15 @@ import './MainPage.scss';
 import { useNavigate } from 'react-router-dom';
 
 function MainPage() {
-const navigate= useNavigate();
+    const navigate = useNavigate();
 
-const gotoContact=()=>{
-    navigate('/contact-us');
-}
+    const gotoContact = () => {
+        navigate('/contact-us');
+    }
 
-const gotoJobs =()=>{
-    navigate('/navigate-to-your-next-opportunity');
-}
+    const gotoJobs = () => {
+        navigate('/navigate-to-your-next-opportunity');
+    }
 
     return (
         <div className="main-page-container">
@@ -30,25 +30,26 @@ const gotoJobs =()=>{
             <div className='column-2'>
                 <div className='column-2-r1'>
                     <h2>Hire the right talent</h2>
-                    <button className='btn-col2' onClick={()=>gotoContact()}>Connect with us </button>
+                    <button className='btn-col2' onClick={() => gotoContact()}>Connect with us </button>
                 </div>
                 <div className='column-2-r2'>
                     <h2>Make your next career move</h2>
-                    <button className='btn-col2'onClick={()=>gotoJobs()}>Find Jobs </button>
+                    <button className='btn-col2' onClick={() => gotoJobs()}>Find Jobs </button>
                 </div>
-                </div>
-                <div className='column-3'>
-                    <div></div>
-                        
-                    </div>
-                <div className='column-4'><h1> </h1></div>
-                <div className='column-5'><h1> </h1></div>
-                <div className='column-6'><h1> </h1></div>
-                <div className='column-7'><h1> </h1></div>
+            </div>
+            <div className='column-3'>
 
+               
 
             </div>
-            );
+            <div className='column-4'><h1> </h1></div>
+            <div className='column-5'><h1> </h1></div>
+            <div className='column-6'><h1> </h1></div>
+            <div className='column-7'><h1> </h1></div>
+
+
+        </div>
+    );
 }
 
-            export default MainPage;
+export default MainPage;
