@@ -2,60 +2,99 @@
     position: relative;
     bottom: 0;
     left: 0;
+    top: 0;
     width: 100%;
-    display: flex;
+     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px 50px;
-    /* Adjust the padding values as per your preference */
-
+    //padding-top: 0;
+    padding: 30px 10px;
+  
     .Img-col {
-        flex-basis: 40%;
-        /* Adjust the width of the first column */
-
-        // Rest of the styles...
+      flex-basis: 40%;
+  
+      img {
+        width: 208px;
+        height: 142px;
+        padding-left: 40px;
+      }
+  
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+  
+        img {
+          width: 30%;
+          height: 30%;
+        }
+      }
+    //   @media (max-width: 768px) {
+    //     flex-wrap: nowrap;
+    //   }
     }
-
+  
     .overview-col,
     .customer-service-col,
     .connect-with-us-col {
-        flex-basis: 20%;
-
-        /* Adjust the width of the other three columns */
-        ul {
-            list-style-type: none;
-            padding: 0;
-
-            li {
-                margin-bottom: 10px;
-
-                a {
-                    text-decoration: none;
-                    color: #000;
-
-                    &:hover {
-                        color: #555;
-                    }
-                }
-            }
+      flex-basis: 20%;
+      h4{
+        font-size: 25px;
+        @media (max-width: 768px) {
+            font-size: 20px;
         }
+      }
+  
+      ul {
+        list-style-type: none;
+        padding: 0;
+  
+        li {
+         font-size: 15px;
+          margin-bottom: 10px;
 
-
+  
+          a {
+            text-decoration: none;
+            color: #000;
+  
+            &:hover {
+              color: #555;
+            }
+          }
+          @media (max-width: 768px) {
+            font-size: 10px;
+          }
+        }
+      }
+  
+      @media (max-width: 768px) {
+        flex-basis: 10%;
+      }
     }
+  
+    .connect-with-us-col {
+      align-items: center;
+  
+      .social-media {
+        display: flex;
+  
+        .social-icon {
+          width: 40px;
+          margin-right: 10px;         
+        }
+      }
+  
+      img {
+        max-width: 120px;
+        height: auto;
+        margin-top: 10px;
 
-}
-
-.social-media {
-    display: flex;
-
-    .social-icon {
-        width: 40px;
-        margin-right: 10px;
+        @media (max-width: 768px) {
+        max-width: 70px;
+        height: auto;
+        margin-top: 5px;
+          }
+      }
     }
-}
-
-.connect-with-us-col,
-img {
-
-    align-items: center;
-}
+  }
+  

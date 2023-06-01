@@ -1,86 +1,195 @@
-.main-Whatwedo{
-    margin-top: 150px;    
+.main-Whatwedo {
+    margin-top: 150px;
     margin-bottom: 60px;
-    
 }
-.text-area{
+
+.text-area {
     background-image: url(https://indihire.com/wp-content/uploads/2022/06/banner-1.png);
     max-width: 100%;
-    height:400px;
+    height: 400px;
     text-align: left;
-
     padding-top: 110px;
     padding-left: 110px;
-    strong{
+
+    strong {
         font-size: 70px;
         font-weight: bold;
     }
-    small{
+
+    small {
         font-size: 55px;
         font-weight: 600;
     }
-    span{
+
+    span {
         font-size: 20px;
     }
 }
-.btn-divs{
+
+.btn-divs {
     padding: 20px;
-    border-color:solid 1px  grey;
-    ul{
+    border-color: solid 1px grey;
+    ul {
         display: flex;
         flex-direction: row;
-        //justify-content: space-between;
+        justify-content: center;
     }
-    li{
+    
+    li {
         display: inline-block;
         padding: 20px;
         padding-bottom: 10px;
     }
-    button{
-        
-        width:250px;
-        height:60px;
+
+    button {
+        width: 250px;
+        height: 60px;
         background-color: white;
-        border-color: rgb(125, 118, 118);
-        color: rgb(113, 108, 108);
+        border-color: rgb(196, 182, 182);
+        color: rgb(196, 182, 182);
         border-radius: 30px;
         font-size: 20px;
-
     }
 }
-.solutions-col{
+
+.solutions-col {
     display: flex;
     flex-direction: row;
     padding: 10px;
     padding-top: 0px;
-    .solution-img{
-        width:100%;
-        height:100%;
-    }
-    .solution-text{
-        text-align: center;
-        padding: 10px;
-      
 
-        .sections-part{
+    .solution-img {
+        width: 100%;
+        height: 100%;
+        padding-left: 100px;
+    }
+
+    .solution-text {
+        text-align: left;
+        padding: 0px;
+        h2{
+            font-size: 50px;
+             }
+             p{
+                font-size: 20px;
+             }
+        
+
+        .sections-part {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            padding:30px;
+            padding: 10px;
             
-            .slides ul{
-                display: inline-block;
-                li{
-                    border: 1px solid grey;
-                    height:150px;
-                    width:150px;
-        
+            .slides {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                width: 100%;
+                margin-top: 10px;
+
+                li {
+                    border: 1px solid rgb(211, 199, 199);
+                    border-radius: 10px;
+                    height: 80px;
+                    width: calc(100% / 4 - 20px);
+                    margin: 10px;
+                    display: flex;
+                    align-items: center;
+                    // justify-content: center;
+                    padding: 20px;
+                    text-align: center;
+                    padding-right: 70px;
+                   
+
+                    p {
+                        align-items: center;
+                        font-size:15px;
+                       
+                    }
                 }
             }
         }
     }
-    
+}
+.slide-info{
+    h3{
+        color:maroon;
+        font-size: 45px;
     }
-   
-        
+}
+
+@media (max-width: 768px) {
+    .text-area {
+      height: 300px;
+      padding-top: 100px;
+      padding-left: 20px;
   
+      strong {
+        font-size: 40px;
+      }
+  
+      small {
+        font-size: 35px;
+      }
+  
+      span {
+        font-size: 16px;
+      }
+    }
+  
+    .btn-divs {
+        padding: 7px;
+      button {
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+         
+      }
+      li{
+        padding: 2px;
+      }
+    }
+  
+    .solutions-col {
+      flex-direction: column;
+  
+      .solution-img {
+        padding-left: 20px;
+        width: 50%;
+        height: 50%;
+      }
+  
+      .solution-text {
+        padding: 70px;
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+  
+        .sections-part {
+          .slides {
+            li {
+              height: 60px;
+              width: calc(100% / 2 - 20px);
+              margin: 5px;
+              padding: 10px;
+              padding-right: 10px;
+  
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .slide-info{
+    h3{
+        
+        font-size: 35px;
+    }
+}
+  }
