@@ -4,7 +4,7 @@ import './WhatWeDo.scss';
 
 function WhatWeDo() {
 
-    const [selectedSlide, setSelectedSlide] = useState(null);
+    const [selectedSlide, setSelectedSlide] = useState(0);
 
     const handleSlideClick = (index) => {
         setSelectedSlide(index);
