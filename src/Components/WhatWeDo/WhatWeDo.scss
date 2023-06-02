@@ -1,195 +1,261 @@
 .main-Whatwedo {
-    margin-top: 150px;
-    margin-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
 }
 
 .text-area {
-    background-image: url(https://indihire.com/wp-content/uploads/2022/06/banner-1.png);
-    max-width: 100%;
-    height: 400px;
-    text-align: left;
-    padding-top: 110px;
-    padding-left: 110px;
+  background-image: url(https://indihire.com/wp-content/uploads/2022/06/banner-1.png);
+  max-width: 100%;
+  height: 400px;
+  text-align: left;
+  padding-top: 110px;
+  padding-left: 110px;
+  align-items: center;
 
+  h1 {
     strong {
-        font-size: 70px;
-        font-weight: bold;
+      font-size: 70px;
+      font-weight: bold;
     }
 
     small {
-        font-size: 55px;
-        font-weight: 600;
+      font-size: 55px;
+      font-weight: 600;
     }
+  }
 
-    span {
-        font-size: 20px;
-    }
+  span {
+    font-size: 20px;
+  }
+
+
+
 }
 
 .btn-divs {
-    padding: 20px;
-    border-color: solid 1px grey;
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    li {
-        display: inline-block;
-        padding: 20px;
-        padding-bottom: 10px;
-    }
+  padding: 20px;
+  border-color: solid 1px grey;
+  align-items: center;
 
-    button {
-        width: 250px;
-        height: 60px;
-        background-color: white;
-        border-color: rgb(196, 182, 182);
-        color: rgb(196, 182, 182);
-        border-radius: 30px;
-        font-size: 20px;
-    }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  li {
+    display: inline-block;
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+
+  button {
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    border-color: rgb(196, 182, 182);
+    color: rgb(196, 182, 182);
+    border-radius: 30px;
+    font-size: 20px;
+
+  }
 }
 
 .solutions-col {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  flex-wrap: nowrap;
+
+  padding-top: 0px;
+
+  .solution-img {
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 10px;
+
+
+    padding-bottom: 10px;
+
+    align-items: center;
+
+  }
+
+  .solution-text {
+    text-align: left;
+    padding: 0px;
+
+    h2 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .sections-part {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+
+      .slides {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 10px;
+
+        li {
+          border: 1px solid rgb(211, 199, 199);
+          border-radius: 10px;
+          height: 80px;
+          width: calc(100% / 4 - 20px);
+          margin: 10px;
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          text-align: center;
+          padding-right: 70px;
+
+          p {
+            align-items: center;
+            text-align: center;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slide-info {
+  h3 {
+    color: maroon;
+    font-size: 45px;
+  }
+}
+
+
+
+@media screen and (max-width: 1023px) {
+  .text-area {
+    height: auto;
+    padding-top: 10px;
+    padding-left: 200px;
+    background-image: none;
+    text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  h1 {
+    text-align: center;
+    strong {
+      font-size: 40px;
+      
+    }
+
+    small {
+      font-size: 30px;
+    }
+
+  }
+
+
+  span {
+    text-align: center;
+    font-size: 16px;
+  }
+
+
+
+  .btn-divs {
     padding: 10px;
-    padding-top: 0px;
+    align-items: center;
+
+    button {
+      width: 100%;
+      height: 30px;
+      font-size: 15px;
+    }
+
+    ul {
+      flex-direction: column;
+      justify-content: space-evenly;
+
+    }
+
+    li {
+      padding: 5px;
+      padding-bottom: 3px;
+    }
+  }
+
+  .solutions-col {
+    flex-direction: column;
+    padding: 0;
 
     .solution-img {
-        width: 100%;
-        height: 100%;
-        padding-left: 100px;
+      width: 100%;
+      height: 100%;
+      padding-left: 200px;
+      padding-right: 150px;
+
+      padding-bottom: 5px;
+      align-items: center;
     }
 
     .solution-text {
-        text-align: left;
-        padding: 0px;
-        h2{
-            font-size: 50px;
-             }
-             p{
-                font-size: 20px;
-             }
-        
+      text-align: center;
+      padding: 10px;
 
-        .sections-part {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding: 10px;
-            
-            .slides {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                width: 100%;
-                margin-top: 10px;
-
-                li {
-                    border: 1px solid rgb(211, 199, 199);
-                    border-radius: 10px;
-                    height: 80px;
-                    width: calc(100% / 4 - 20px);
-                    margin: 10px;
-                    display: flex;
-                    align-items: center;
-                    // justify-content: center;
-                    padding: 20px;
-                    text-align: center;
-                    padding-right: 70px;
-                   
-
-                    p {
-                        align-items: center;
-                        font-size:15px;
-                       
-                    }
-                }
-            }
-        }
-    }
-}
-.slide-info{
-    h3{
-        color:maroon;
-        font-size: 45px;
-    }
-}
-
-@media (max-width: 768px) {
-    .text-area {
-      height: 300px;
-      padding-top: 100px;
-      padding-left: 20px;
-  
-      strong {
+      h2 {
         font-size: 40px;
       }
-  
-      small {
-        font-size: 35px;
+
+      p {
+        font-size: 20px;
       }
-  
-      span {
-        font-size: 16px;
-      }
-    }
-  
-    .btn-divs {
-        padding: 7px;
-      button {
-        width: 120px;
-        height: 30px;
-        font-size: 10px;
-         
-      }
-      li{
-        padding: 2px;
-      }
-    }
-  
-    .solutions-col {
-      flex-direction: column;
-  
-      .solution-img {
-        padding-left: 20px;
-        width: 50%;
-        height: 50%;
-      }
-  
-      .solution-text {
-        padding: 70px;
-        h2 {
-          font-size: 30px;
-        }
-        p {
-          font-size: 16px;
-        }
-  
-        .sections-part {
-          .slides {
-            li {
-              height: 60px;
-              width: calc(100% / 2 - 20px);
-              margin: 5px;
-              padding: 10px;
-              padding-right: 10px;
-  
-              p {
-                font-size: 12px;
-              }
+
+      .sections-part {
+        padding: 10px;
+
+        .slides {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          width: 100%;
+          margin-top: 10px;
+
+          li {
+            height: 50px;
+            width: calc(100% / 1 - 20px);
+            margin: 10px;
+            padding: 10px;
+            font-size: 40px;
+            text-align: center;
+
+            p {
+              font-size: 20px;
             }
           }
         }
       }
     }
-    .slide-info{
-    h3{
-        
-        font-size: 35px;
+
+    .slide-info {
+      h3 {
+        font-size: 40px;
+      }
     }
-}
   }
+}

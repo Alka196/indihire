@@ -60,10 +60,11 @@ function WhatWeDo() {
 
             <div className="main-Whatwedo">
                 <div className='text-area'>
-                    <h1><strong>Agile. Focused.
-
-                    </strong>
-                        <br></br><small>Innovative.</small></h1>
+                    <h1>
+                        <strong>Agile. Focused. </strong>
+                        <br></br>
+                        <small>Innovative.</small>
+                    </h1>
 
                     <span >We offer rapid technical recruiting services that enable IT, <br></br>
                         tech, and digital companies find the right people, fast</span>
@@ -103,13 +104,13 @@ function WhatWeDo() {
                                 <h3>{slideInfo[selectedSlide].title}</h3><br></br>
                                 <div
                                     dangerouslySetInnerHTML={{
-                                        __html: slideInfo[selectedSlide].description,     
+                                        __html: slideInfo[selectedSlide].description,
                                         // By using dangerouslySetInnerHTML and passing slide.description as the __html property, the HTML tags within the description string will be rendered correctly. 
                                     }}
                                 />
                             </div>
                         )}
-                        
+
 
                     </div>
 
@@ -120,3 +121,7 @@ function WhatWeDo() {
 }
 
 export default WhatWeDo;
+
+
+
+  

@@ -1,15 +1,10 @@
 .main-page-container {
-    margin-top: 150px;
-    margin-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-    // padding-left:100px;
-    // padding-right: 100px;
+  margin-top: 150px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 
-
-}
-
-.column-1 {
+  .column-1 {
     background-image: url(https://indihire.com/wp-content/uploads/2022/06/Home-banner-bg.png);
     background-position: 10% center;
     background-repeat: no-repeat;
@@ -22,16 +17,13 @@
     position: relative;
     z-index: 1;
 
-    @media (max-width: 768px) {
-        flex-direction: column;
-        padding: 100px;
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+      padding: 50px;
     }
+  }
 
-
-}
-
-.column-1-r1 {
-
+  .column-1-r1 {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -39,97 +31,90 @@
     text-align: left;
 
     h1 {
-        font-size: 60px;
+      font-size: 60px;
 
-        @media (max-width: 768px) {
-            font-size: 30px;
-        }
+      @media screen and (max-width: 1023px) {
+        font-size: 40px;
+        text-align: center;
+      }
     }
 
     p {
-        font-size: 30px;
-        text-align: left;
-        padding-left: 115px;
+      font-size: 30px;
+      text-align: left;
+      padding-left: 115px;
 
-        @media (max-width: 768px) {
-            font-size: 15px;
-            padding-left: 0;
-            text-align: center;
-        }
-
+      @media screen and (max-width: 1023px) {
+        font-size: 20px;
+        padding-left: 0;
+        text-align: center;
+      }
     }
-}
+  }
 
-.column-1-r2 {
-    //flex-basis: 60%;
+  .column-1-r2 {
     flex-grow: 6;
-    // flex-grow: 6;
 
     img {
-        width: 800px;
-        height: 700px;
-        padding-left: 50px;
+      width: 800px;
+      height: 700px;
+      padding-left: 50px;
 
-        @media (max-width: 768px) {
-            width: 100%;
-            height: auto;
-            padding-left: 0;
-        }
+      @media screen and (max-width: 1023px) {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+      }
     }
-}
+  }
 
-.column-2 {
+  .column-2 {
     display: flex;
     flex-direction: row;
     height: 500px;
-    // width: 10000000vh;
     background-color: rgb(104, 19, 19);
     text-align: center;
     align-items: center;
     border: white 1px solid;
-
+  
     .btn-col2 {
-        background-color: #c98806;
-        border-radius: 20px;
-        width: 200px;
-        height: 50px;
-        border: none;
-        font-size: 20px;
-
-        @media (max-width: 768px) {
-            width: 150px;
-            height: 30px;
-            font-size: 10px;
-        }
-
+      background-color: #c98806;
+      border-radius: 20px;
+      width: 200px;
+      height: 50px;
+      border: none;
+      font-size: 20px;
+      margin-bottom: 20px;
+  
+      @media screen and (max-width: 1023px) {
+        width: 150px;
+        height: 30px;
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
     }
-
-    .column-2-r1 {
-        flex-basis: 50%;
-        color: white;
-        font-size: 100px;
-
-        @media (max-width: 768px) {
-            flex-basis: 100%;
-            font-size: 40px;
-        }
-
+  
+    .column-2-row {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 100px;
+  
+      @media screen and (max-width: 1023px) {
+        font-size: 40px;
+      }
     }
-
-    .column-2-r2 {
-        flex-basis: 50%;
-        color: white;
-        font-size: 100px;
-
-        @media (max-width: 768px) {
-            flex-basis: 100%;
-            font-size: 40px;
-        }
-
+  
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+      height: auto;
+  
+      .column-2-row {
+        flex-grow: unset;
+      }
     }
-    @media (max-width: 768px) {
-        flex-direction: column;
-        height: 200px;
-    }
-    
-}
+  }
+}  

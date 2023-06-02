@@ -6,10 +6,9 @@ const Footer = () => {
     return (
         <div className='main-footer'>
             <div className='Img-col'>
-                <img
-                    width="208"
-                    height="142"
-                    src="https://indihire.com/wp-content/uploads/2022/06/Logo-19.png" alt="INDIHIRE" />
+                <img                    
+                    src="https://indihire.com/wp-content/uploads/2022/06/Logo-19.png"
+                     alt="INDIHIRE" />
 
             </div>
             <div className='overview-col'>
