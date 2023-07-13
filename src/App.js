@@ -1,5 +1,5 @@
 
-// import './App.css';
+ import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Home from './Components/Home/Home';
@@ -9,12 +9,26 @@ import FindJobs from './Components/FindJobs/Findjobs';
 import Aboutus from './Components/Aboutus/Aboutus';
 import Resources from './Components/Resources/Resources';
 import Contactus from './Components/Contactus/Contactus';
+import React, { useState, useEffect } from 'react';
 
 function App() {
+
+   const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <div className="App">
       {/* <h1> INDIHIRE </h1> */}
-      <BrowserRouter>
+      {loading ? (
+         <div className="loader-container">
+      	  <div className="ring"><h1>Loading.......</h1></div>
+         </div>
+      ) : (<BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>} >
         <Route path='what-we-do' element={<WhatWeDo/>} />
@@ -26,7 +40,7 @@ function App() {
         <Route path='*' element={<ErrorPage/>} />
         </Route>
       </Routes>
-      </BrowserRouter>
+      </BrowserRouter>)}
     </div>
   );
 }

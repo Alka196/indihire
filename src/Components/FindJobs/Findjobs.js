@@ -4,9 +4,12 @@ import './FindJobs.scss'
 
 function FindJobs() {
     return ( 
-        <>
-      
-        <h1>FindJobs</h1></>
+        <div className='FindJobs-main'>
+        <div className='imgcol'>
+
+            <img src="https://www.creative-tim.com/blog/content/images/2021/07/coming-soon.jpg" alt="image" />
+        </div>
+    </div>
      );
 }
 

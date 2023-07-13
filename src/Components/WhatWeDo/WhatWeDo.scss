@@ -115,14 +115,27 @@
         li {
           border: 1px solid rgb(211, 199, 199);
           border-radius: 10px;
-          height: 80px;
+          height: 100px;
           width: calc(100% / 4 - 20px);
           margin: 10px;
           display: flex;
           align-items: center;
-          padding: 20px;
+          padding: 10px;
+         
           text-align: center;
-          padding-right: 70px;
+          //padding-right: 70px;
+          color: grey;
+          
+
+          &:hover {
+            color: rgb(8, 1, 1);
+            background-color: antiquewhite;
+            
+            box-shadow: 10px 10px 10px rgba(78, 70, 70, 0.2);
+            cursor: pointer;
+    
+          }
+
 
           p {
             align-items: center;
@@ -227,27 +240,35 @@
       }
 
       .sections-part {
+        display: flex;
+        flex-wrap: wrap;
         padding: 10px;
 
         .slides {
+         
+          border: 1px solid rgb(211, 199, 199);
+          border-radius: 10px;
+           height: 80px;
+          
+          margin: 10px;
           display: flex;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          width: 100%;
-          margin-top: 10px;
-
-          li {
-            height: 50px;
-            width: calc(100% / 1 - 20px);
-            margin: 10px;
-            padding: 10px;
-            font-size: 40px;
+          align-items: center;
+          padding: 5px;
+          text-align: center;
+          padding-right: 70px;
+          position: relative;
+          transition: color 0.3s, box-shadow 0.3s;
+       
+          
+          
+        
+          p {
+           // align-items: center;
             text-align: center;
-
-            p {
-              font-size: 20px;
-            }
+            font-size: 15px;
           }
+        
+         
         }
       }
     }
@@ -258,4 +279,94 @@
       }
     }
   }
+}
+.hiring-col{
+  background-color: rgb(165, 55, 55);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: left;
+  color: rgb(241, 238, 238);
+  padding: 50px;
+  margin-top: 30px;
+  p{
+    font-size: 20px;
+
+  }
+}
+.existing-cus-col{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.carousel-wrapper {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+.responsive-carousel {
+  width: 100%;
+  height: auto !important;
+  
+}
+.carousel-image {
+  max-width: 90%;
+  max-height: 200px; /* Adjust the height as needed */
+  object-fit: contain;
+  border: 2px solid black;
+}
+
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    padding: 0 10px; /* Adjust padding as needed for smaller screens */
+  }
+}
+
+
+
+
+carousel-area {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  align-items: center;
+
+}
+
+
+
+.slider {
+  margin: 0 20px;
+  overflow: "hidden";
+  padding: 2rem 0;
+ 
+  align-items: center;
+}
+
+.slider img {
+  max-width: 450px;
+  max-height: 100%;
+  border-radius: 10px;
+  
+}
+
+.react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+}
+
+.custom-dot-list-style button {
+  border: none;
+  background: rgb(255, 68, 68);
+}
+
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+  background: rgb(255, 68, 68) !important;
 }

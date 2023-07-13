@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './WhatWeDo.scss';
+import { Carousel } from 'react-responsive-carousel';
+//import Carousel from 'react-multi-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import 'react-multi-carousel/lib/styles.css';
 
 
 function WhatWeDo() {
@@ -55,6 +59,58 @@ function WhatWeDo() {
         }
 
     ];
+
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3,
+            slidesToSlide: 3 // optional, default to 1.
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 768 },
+            items: 2,
+            slidesToSlide: 2 // optional, default to 1.
+        },
+        mobile: {
+            breakpoint: { max: 767, min: 464 },
+            items: 1,
+            slidesToSlide: 1 // optional, default to 1.
+        }
+    };
+    const sliderImageUrl = [
+        //First image url
+        {
+            url:
+                "https://indihire.com/wp-content/uploads/2022/06/article-1.png"
+        },
+        {
+            url:
+                "https://indihire.com/wp-content/uploads/2022/04/insights-3.png"
+        },
+        //Second image url
+        {
+            url:
+                "https://indihire.com/wp-content/uploads/2022/03/insights-4.png"
+        },
+        //Third image url
+        {
+            url:
+                "https://indihire.com/wp-content/uploads/2022/03/insights-2.png"
+        },
+
+        //Fourth image url
+
+        {
+            url:
+                "https://indihire.com/wp-content/uploads/2022/01/insights-5.png"
+        }
+    ];
+
+   
+
+  
+
+
     return (
         <>
 
@@ -83,14 +139,14 @@ function WhatWeDo() {
                             alt="solution-image" />
                     </div>
                     <div className='solution-text'>
-                        <h2 >We’re solution-oriented.<br /> We’re experienced. We’re <br></br>IndiHire.</h2>
+                        <h2 >We’re solution-oriented.<br /> We’re experienced. We’re <br></br>ITHire.</h2>
                         <p>Our deep tech expertise and years of experience in the sector have <br></br>helped us build a wide network of industry professionals and craft<br></br> customized solutions to your hiring challenges.</p>
                         <div className='sections-part'>
                             <ol className="slides">
                                 {slideInfo.map((slide, index) => (
                                     <li
                                         key={index}
-                                        className={selectedSlide === index ? 'active' : ''}
+                                        className={selectedSlide === index ? 'active ' : ''}
                                         onClick={() => handleSlideClick(index)}
                                     >
                                         <p>{slide.title}</p>
@@ -115,13 +171,136 @@ function WhatWeDo() {
                     </div>
 
                 </div>
-            </div>
-        </>
-    );
+                <div className='hiring-col'>
+                    <div className='hiring-col-r1'>
+                        <h1>Our hiring process</h1>
+                        <p>
+                            Our hiring process
+                            At ITHire, we are committed to providing our clients with <br></br>
+                            the best qualified candidates for their open positions. Our<br></br>
+                            solutions are customized to meet your unique needs, and<br></br>
+                            are discreet and highly intuitive so that you get people<br></br>
+                            who are best-suited to help you achieve your <br></br>
+                            organizational goals.</p>
+                    </div>
+                    <div className='hiring-col-r2'>
+                        <p><span><h1>01</h1></span>
+                            We start by identifying your specific requirements for a job <br></br>
+                            and establishing common goals for recruitment.</p>
+                        <hr></hr>
+                        <p><span><h1>02</h1></span>
+                            The selection process involves a comprehensive analysis of <br></br>
+                            candidates, starting from tangible attributes such as<br></br>
+                            subject knowledge, education, and experience to intangible<br></br>
+                            traits such as aptitude, emotional intelligence, and<br></br>
+                            organizational fit.</p>
+                    </div>
+                </div>
+                <div className='existing-cus-col'>
+                    <div className='existing-cus-col-r1'>
+                        <h1>Our existing customers</h1>
+                        <p>It is not just people but the right people that maketh a company! We help you find the right<br></br>
+                            people who can help you on your path to success.</p>
+                        <p>The recruiting process is challenging and time-consuming. We provide our clients with a fully-<br></br>
+                            managed service that reduces the time they spend on candidate search and selection. Our<br></br>
+                            solutions allow you to focus on core business activities while we enable you to make the right <br></br>
+                            hiring decisions.
+
+                        </p>
+
+                    </div>
+                    <div className="carousel-wrapper">
+                        <Carousel showThumbs={false} className="responsive-carousel" autoPlay={true} interval={3000}>
+                          
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/14-1.png" alt="Image 1" className="carousel-image"/>
+                               
+                           
+                                <img src="https://indihire.com/wp-content/uploads/2022/05/2.png" alt="Image 2" className="carousel-image"/>
+                                
+                            
+                                <img src="https://indihire.com/wp-content/uploads/2022/05/1.png" alt="Image 3" className="carousel-image"/>
+                                
+                           
+                                <img src="https://indihire.com/wp-content/uploads/2022/05/3.png" alt="Image 1" className="carousel-image"/>
+                               
+                            
+                                <img src="https://indihire.com/wp-content/uploads/2022/05/4.png" alt="Image 2" className="carousel-image"/>
+                          
+                                <img src=" https://indihire.com/wp-content/uploads/2022/05/6.png" alt="Image 3" className="carousel-image" />
+                                
+                            
+                                <img src="https://indihire.com/wp-content/uploads/2022/05/7.png" alt="Image 1" className="carousel-image"/>
+                           
+                                <img src=" https://indihire.com/wp-content/uploads/2022/05/8.png" alt="Image 2" className="carousel-image"/>
+                          
+                                <img src="https://indihire.com/wp-content/uploads/2022/05/9.png " alt="Image 3" className="carousel-image"/>
+                           
+                                <img src="https://indihire.com/wp-content/uploads/2022/05/10.png " alt="Image 1" className="carousel-image"/>
+                          
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/18.png " alt="Image 2" className="carousel-image"/>
+                        
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/19.png" alt="Image 3" className="carousel-image" />
+                          
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/16.png" alt="Image 1" className="carousel-image"/>
+                        
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/17.png" alt="Image 2" className="carousel-image"/>
+                          
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/12-1.png" alt="Image 3" className="carousel-image"/>
+                         
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/14-1.png" alt="Image 1" className="carousel-image"/>
+                            
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/13-1.png" alt="Image 2" className="carousel-image"/>
+                            
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/15.png" alt="Image 3" className="carousel-image"/>
+                           
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/11-1.png " alt="Image 1" className="carousel-image"/>
+                           
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/13-1.png" alt="Image 2" className="carousel-image"/>
+                            
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/15.png" alt="Image 3"className="carousel-image" />
+                           
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/11-1.png " alt="Image 3" className="carousel-image"/>
+                             
+                                <img src="https://indihire.com/wp-content/uploads/2022/07/20.png" alt="Image 3" className="carousel-image"/>
+                          
+                        </Carousel>
+
+                    </div>
+                    </div>
+                    <div className='column-5'>
+                        <div className='text-area'>
+                            <h1>Knowledge hub</h1><br></br>
+                            <p>Explore research-based blog posts and articles focused on talent acquisition<br></br>
+                                and recruitment in IT and digital space.</p>
+                        </div>
+                        <div className='carousel-area'>
+                    <Carousel
+                        responsive={responsive}
+                        autoPlay={true}
+                        swipeable={true}
+                        draggable={true}
+                        showDots={true}
+                        infinite={true}
+                        partialVisible={false}
+                        interval={3000}
+                        dotListClass="custom-dot-list-style"
+                    >
+                        {sliderImageUrl.map((imageUrl, index) => (
+                            <div className="slider" key={index}>
+                                <img src={imageUrl.url} alt="movie" />
+                            </div>
+                        ))}
+                    </Carousel>
+
+                </div>
+                    </div>
+                </div>
+            </>
+            );
 }
 
-export default WhatWeDo;
+            export default WhatWeDo;
 
 
 
-  
+

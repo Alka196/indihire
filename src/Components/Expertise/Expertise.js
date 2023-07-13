@@ -3,9 +3,12 @@ import './Expertise.scss'
 
 function Expertise() {
     return ( 
-        <>
-       
-        <h1>Expertise</h1></>
+        <div className='expertise-main'>
+        <div className='imgcol'>
+
+            <img src="https://www.creative-tim.com/blog/content/images/2021/07/coming-soon.jpg" alt="image" />
+        </div>
+    </div>
      );
 }
 

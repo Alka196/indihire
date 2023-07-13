@@ -1,4 +1,5 @@
 import React from 'react';
+import './Aboutus.scss'
 
 
 function Aboutus() {
@@ -6,9 +7,12 @@ function Aboutus() {
         <>
         <div className='main-Aboutus'>
             <div className='col-1-About'>
-                
+                <div className='imgcol'>
+
+                <img src="https://www.creative-tim.com/blog/content/images/2021/07/coming-soon.jpg" alt="image"/>
             </div>
-        <h1>Aboutus</h1>
+            </div>
+        
         </div>
        
        

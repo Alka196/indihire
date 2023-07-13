@@ -33,7 +33,7 @@ export default class Header extends React.Component {
                 <Navbar color="white" light expand="md">
                     <NavbarBrand href="/">
                         <img class="starting-logo default-logo " alt="IndiHire"
-                            src="https://indihire.com/wp-content/uploads/2022/03/logo.png" />
+                            src="https://ph-files.imgix.net/5956776e-e3b3-4e2d-98af-f328afda46a1.png?auto=format" />
                     </NavbarBrand>
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 

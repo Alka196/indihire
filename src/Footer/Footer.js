@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='main-footer'>
             <div className='Img-col'>
                 <img                    
-                    src="https://indihire.com/wp-content/uploads/2022/06/Logo-19.png"
+                    src="https://ph-files.imgix.net/5956776e-e3b3-4e2d-98af-f328afda46a1.png?auto=format"
                      alt="INDIHIRE" />
 
             </div>
